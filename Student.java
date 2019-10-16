@@ -39,6 +39,16 @@ public class Student extends Person implements Comparable<Student>{
 		
 		return new Integer(rating);
 	}
+
+
+
+
+
+
+	public String getLastName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 
 }

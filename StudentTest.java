@@ -29,7 +29,13 @@ public class StudentTest {
 	public void testCompareTo() throws NameException {
 		Student firstStudent = new Student("x", "Y", 2);
 		Student secondStudent = new Student("x", "Y", 3);
+		//Do we need more students?
+		Student student = new Student("A", "A", 5);
+		Student empty = new Student("Z","", 3);
 		
+		LastFirstName clfn = new LastFirstName();
+		
+		clfn.compare(firstStudent, secondStudent);
 		int actual = secondStudent.compareTo(firstStudent);
 		//Should be bigger than zero
 		boolean result = false;
